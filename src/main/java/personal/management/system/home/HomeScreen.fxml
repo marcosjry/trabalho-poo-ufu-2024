@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="personal.management.system.home.HomeController">
+    <top>
+        <!-- Barra de menu (opcional) -->
+    </top>
+    <center>
+        <TabPane>
+            <Tab text="Transações">
+                <fx:include source="../transaction/TransactionScreen.fxml"/>
+            </Tab>
+            <Tab text="Agendamentos">
+                <fx:include source="../schedule/ScheduleScreen.fxml"/>
+            </Tab>
+            <Tab text="Orçamentos">
+                <fx:include source="../budget/BudgetScreen.fxml"/>
+            </Tab>
+            <Tab text="Gráficos">
+                <fx:include source="../report/ReportScreen.fxml"/>
+            </Tab>
+        </TabPane>
+    </center>
+</BorderPane>
