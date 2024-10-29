@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="personal.management.system.budget.BudgetController">
+    <HBox spacing="10">
+        <TextField fx:id="txtValorOrcamento" promptText="Valor Total"/>
+        <Button text="Criar Orçamento" onAction="#handleCreateBudget"/>
+    </HBox>
+    <HBox spacing="10">
+        <TextField fx:id="txtCategoria" promptText="Categoria"/>
+        <TextField fx:id="txtValorCategoria" promptText="Valor"/>
+        <Button text="Adicionar Categoria" onAction="#handleAddCategory"/>
+        <Button text="Adicionar Despesa" onAction="#handleAddSpent"/>
+    </HBox>
+    <TableView fx:id="tvOrcamentos">
+        <!-- Colunas para categoria, valor, tipo (receita/despesa) -->
+    </TableView>
+    <HBox spacing="10">
+        <Button text="Editar" onAction="#handleEditBudget"/>
+        <Button text="Excluir" onAction="#handleDeleteBudget"/>
+    </HBox>
+</VBox>
