@@ -117,7 +117,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>personal.management.system.pms/personal.management.system.HelloApplication
+                            <mainClass>personal.management.system.pms/personal.management.system.Initiate
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
