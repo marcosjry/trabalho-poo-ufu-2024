@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="personal.management.system.graphic.controllers.home.HomeController"
+            prefHeight="600.0" prefWidth="800.0">
+
+    <center>
+        <TabPane fx:id="mainTabPane">
+            <Tab fx:id="transactionTab" text="Transações">
+                <fx:include source="transactionScreen.fxml"/>
+            </Tab>
+            <Tab fx:id="scheduleTab" text="Agendamentos">
+                <fx:include source="ScheduleScreen.fxml"/>
+            </Tab>
+            <Tab fx:id="budgetTab" text="Orçamentos">
+                <fx:include source="BudgetScreen.fxml"/>
+            </Tab>
+            <Tab fx:id="reportTab" text="Gráficos">
+                <fx:include source="ReportScreen.fxml"/>
+            </Tab>
+        </TabPane>
+    </center>
+</BorderPane>
