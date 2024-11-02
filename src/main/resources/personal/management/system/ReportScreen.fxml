@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="800.0" maxWidth="750.0" minWidth="750.0" prefHeight="0.0" prefWidth="0.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="personal.management.system.graphic.controllers.report.ReportController">
+    <PieChart fx:id="pcTransacoes" title="Receitas vs. Despesas" />
+    <BarChart fx:id="bcTransacoesMes" title="Transações por Mês">
+        <xAxis><CategoryAxis label="Mês" /></xAxis>
+        <yAxis><NumberAxis label="Valor" /></yAxis>
+    </BarChart>
+</VBox>

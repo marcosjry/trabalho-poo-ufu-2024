@@ -11,12 +11,13 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="personal.management.system.graphic.controllers.transaction.TransactionController">
+<VBox maxHeight="460.0" maxWidth="848.0" minHeight="460.0" minWidth="750.0" prefHeight="460.0" prefWidth="848.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="personal.management.system.graphic.controllers.transaction.TransactionController">
     <HBox prefHeight="31.0" prefWidth="713.0" spacing="10">
         <ComboBox fx:id="tipoComboBox" promptText="Tipo">
          <HBox.margin>
             <Insets left="10.0" top="3.0" />
-         </HBox.margin></ComboBox>
+         </HBox.margin>
+        </ComboBox>
         <TextField fx:id="valorTransacao" promptText="Valor">
          <HBox.margin>
             <Insets top="3.0" />
@@ -29,29 +30,42 @@
          <HBox.margin>
             <Insets top="3.0" />
          </HBox.margin></TextField>
+        <ComboBox fx:id="categoriaTransacao" promptText="Categoria">
+            <HBox.margin>
+                <Insets left="10.0" top="3.0" />
+            </HBox.margin>
+        </ComboBox>
         <Button id="botaoAdicionar" onAction="#handleAddTransaction" prefHeight="25.0" prefWidth="115.0" text="Adicionar">
          <HBox.margin>
             <Insets right="10.0" top="3.0" />
          </HBox.margin></Button>
+      <VBox.margin>
+         <Insets top="5.0" />
+      </VBox.margin>
     </HBox>
-    <TableView fx:id="tabelaTransacoes" blendMode="DARKEN" editable="true" prefHeight="400.0" prefWidth="712.0">
+    <TableView fx:id="tabelaTransacoes" blendMode="DARKEN" editable="true" maxWidth="800.0" minWidth="800.0" prefWidth="0.0">
         <columns>
-            <TableColumn prefWidth="150.0" text="Tipo">
+            <TableColumn prefWidth="100.0" text="Tipo">
                 <cellValueFactory>
                     <PropertyValueFactory property="tipo" />
                 </cellValueFactory>
             </TableColumn>
-            <TableColumn prefWidth="150.0" text="Valor">
+            <TableColumn prefWidth="100.0" text="Valor">
                 <cellValueFactory>
                     <PropertyValueFactory property="valor" />
                 </cellValueFactory>
             </TableColumn>
-            <TableColumn prefWidth="150.0" text="Data">
+            <TableColumn prefWidth="100.0" text="Data">
                 <cellValueFactory>
                     <PropertyValueFactory property="data" />
                 </cellValueFactory>
             </TableColumn>
-            <TableColumn prefWidth="304.0" text="Descrição">
+            <TableColumn prefWidth="150.0" text="Categoria">
+                <cellValueFactory>
+                    <PropertyValueFactory property="categoria" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn editable="false" prefWidth="304.0" text="Descrição">
                 <cellValueFactory>
                     <PropertyValueFactory property="descricao" />
                 </cellValueFactory>
@@ -59,10 +73,10 @@
             <!-- Outras colunas -->
         </columns>
       <VBox.margin>
-         <Insets />
+         <Insets left="5.0" right="5.0" top="5.0" />
       </VBox.margin>
     </TableView>
-    <HBox prefHeight="31.0" prefWidth="713.0" spacing="10">
+    <HBox alignment="CENTER" prefHeight="31.0" prefWidth="713.0" spacing="10.0">
         <Button onAction="#handleEditTransaction" text="Editar">
          <HBox.margin>
             <Insets left="10.0" top="3.0" />
@@ -71,5 +85,8 @@
          <HBox.margin>
             <Insets top="3.0" />
          </HBox.margin></Button>
+      <VBox.margin>
+         <Insets bottom="5.0" top="5.0" />
+      </VBox.margin>
     </HBox>
 </VBox>

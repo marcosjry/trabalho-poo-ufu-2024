@@ -1,0 +1,21 @@
+.root {
+    -fx-background-color: #f0f0f0; /* Cor de fundo */
+}
+
+.button {
+    -fx-background-color: #4CAF50; /* Cor do botão */
+    -fx-text-fill: white; /* Cor do texto do botão */
+}
+
+.button:hover {
+    -fx-background-color: #000000; /* Cor do botão ao passar o mouse */
+    -fx-cursor: pointer;
+}
+
+.label {
+    -fx-font-size: 14px; /* Tamanho da fonte */
+}
+
+.text-field {
+    -fx-padding: 10px; /* Espaçamento interno */
+}

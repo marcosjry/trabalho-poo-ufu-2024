@@ -10,6 +10,7 @@ module personal.management.system.pms {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires java.sql;
+    requires java.desktop;
 
     opens personal.management.system.graphic.controllers.login to javafx.fxml;
     opens personal.management.system.graphic.controllers.home to javafx.fxml;
@@ -17,6 +18,7 @@ module personal.management.system.pms {
     opens personal.management.system.graphic.controllers.report to javafx.fxml;
     opens personal.management.system.graphic.controllers.schedule to javafx.fxml;
     opens personal.management.system.graphic.controllers.transaction to javafx.fxml;
+    opens personal.management.system.graphic.controllers.register to javafx.fxml;
 
     opens personal.management.system.models to javafx.base;
 

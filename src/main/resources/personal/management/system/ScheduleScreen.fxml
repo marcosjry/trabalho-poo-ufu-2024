@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="460.0" maxWidth="848.0" minHeight="460.0" minWidth="750.0" prefWidth="848.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="personal.management.system.graphic.controllers.schedule.ScheduleController">
+    <HBox alignment="CENTER_LEFT" spacing="10">
+        <DatePicker fx:id="dpDataAgendamento" promptText="Data" />
+        <TextField fx:id="txtValorAgendamento" promptText="Valor" />
+        <TextField fx:id="txtDescricaoAgendamento" promptText="Descrição" />
+        <CheckBox fx:id="cbPago" alignment="BOTTOM_RIGHT" text="Pago" />
+        <Button onAction="#handleAddSchedule" text="Adicionar" />
+      <VBox.margin>
+         <Insets left="5.0" top="5.0" />
+      </VBox.margin>
+    </HBox>
+    <TableView fx:id="tvAgendamentos">
+      <VBox.margin>
+         <Insets left="5.0" right="5.0" top="5.0" />
+      </VBox.margin></TableView>
+    <HBox alignment="CENTER" spacing="10">
+        <Button onAction="#handleEditSchedule" text="Editar" />
+        <Button onAction="#handleDeleteSchedule" text="Excluir" />
+        <Button onAction="#handlePaySchedule" text="Pagar" />
+      <VBox.margin>
+         <Insets bottom="5.0" left="5.0" top="5.0" />
+      </VBox.margin>
+    </HBox>
+</VBox>

@@ -4,23 +4,21 @@
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane xmlns:fx="http://javafx.com/fxml"
-            fx:controller="personal.management.system.graphic.controllers.home.HomeController"
-            prefHeight="600.0" prefWidth="800.0">
+<BorderPane maxWidth="750.0" minHeight="490.0" minWidth="750.0" prefHeight="0.0" prefWidth="0.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="personal.management.system.graphic.controllers.home.HomeController">
 
     <center>
-        <TabPane fx:id="mainTabPane">
+        <TabPane fx:id="mainTabPane" BorderPane.alignment="CENTER">
             <Tab fx:id="transactionTab" text="Transações">
-                <fx:include source="transactionScreen.fxml"/>
+                <fx:include source="transactionScreen.fxml" />
             </Tab>
             <Tab fx:id="scheduleTab" text="Agendamentos">
-                <fx:include source="ScheduleScreen.fxml"/>
+                <fx:include source="ScheduleScreen.fxml" />
             </Tab>
             <Tab fx:id="budgetTab" text="Orçamentos">
-                <fx:include source="BudgetScreen.fxml"/>
+                <fx:include source="BudgetScreen.fxml" />
             </Tab>
             <Tab fx:id="reportTab" text="Gráficos">
-                <fx:include source="ReportScreen.fxml"/>
+                <fx:include source="ReportScreen.fxml" />
             </Tab>
         </TabPane>
     </center>
